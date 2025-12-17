@@ -53,7 +53,7 @@
                             </ul>
 
                             @foreach($products as $product)
-                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
                                     <div class="single_product">
                                         <div class="product_thumb">
                                             <a href="{{ route('product.show', $product->slug) }}">
