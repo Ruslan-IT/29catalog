@@ -2,16 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Product;
+use App\Models\SiteSetting;
+
 class HomeController
 {
 
     public function index()
     {
-        $products = 'Product';
-
         $title = 'Catalog';
 
-        return view('pages.index', compact('products',  'title'));
+        $siteSettings = SiteSetting::first();
+
+        // Получаем случайные категории для блока категорий
+        $categoriesRandom = Category::inRandomOrder()->get();
+
+        // Получаем случайные продукты для блока выгодных предложений (например 5)
+        $deals = Product::inRandomOrder()->take(5)->get();
+        $products = Product::inRandomOrder()->take(20)->get();
+
+        return view('pages.index', compact(
+            'title',
+            'categoriesRandom',
+            'deals',
+            'siteSettings',
+            'products'
+        ));
     }
 
 }

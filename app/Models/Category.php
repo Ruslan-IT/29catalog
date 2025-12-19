@@ -10,6 +10,7 @@ class Category extends Model
         'name',
         'slug',
         'parent_id',
+        'main_image',
     ];
 
     public function parent()

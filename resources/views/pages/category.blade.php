@@ -57,7 +57,11 @@
                                     <div class="single_product">
                                         <div class="product_thumb">
                                             <a href="{{ route('product.show', $product->slug) }}">
-                                                <img src="{{ asset('storage/' . $product->main_image) }}" alt="{{ $product->title }}">
+
+                                                <img src="{{ asset('storage/' . $product->main_image) }}"
+
+                                                     alt="{{ $product->title }}">
+
                                             </a>
                                         </div>
                                         <div class="product_content">

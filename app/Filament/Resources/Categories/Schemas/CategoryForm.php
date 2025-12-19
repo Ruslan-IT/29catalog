@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Categories\Schemas;
 
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
@@ -26,6 +27,13 @@ class CategoryForm
                     ->required()
                     ->unique(ignoreRecord: true)
                     ->helperText('Формируется автоматически, можно изменить'),
+
+                FileUpload::make('main_image')
+                    ->label('Основное фото')
+                    ->image()
+                    ->directory('сategory/main')
+                    ->disk('public')  // <--- добавляем public диск
+                    ->imageEditor(),
 
                 Select::make('parent_id')
                     ->label('Родительская категория')

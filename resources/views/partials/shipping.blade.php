@@ -8,8 +8,8 @@
                             <span class="pe-7s-piggy"></span>
                         </div>
                         <div class="shipping_content">
-                            <h3>Free Shipping Worldwide</h3>
-                            <p>Diam augue augue in fusce voluptatem</p>
+                            <h3>Energy-Efficient</h3>
+                            <p>Minimizes energy use for lower costs.</p>
                         </div>
                     </div>
                 </div>
@@ -19,8 +19,8 @@
                             <span class="pe-7s-rocket"></span>
                         </div>
                         <div class="shipping_content">
-                            <h3>Free Shipping Worldwide</h3>
-                            <p>Diam augue augue in fusce voluptatem</p>
+                            <h3>High Performance</h3>
+                            <p>Treats large volumes quickly and effectively.</p>
                         </div>
                     </div>
                 </div>
@@ -30,8 +30,8 @@
                             <span class="pe-7s-help2"></span>
                         </div>
                         <div class="shipping_content">
-                            <h3>Free Shipping Worldwide</h3>
-                            <p>Diam augue augue in fusce voluptatem</p>
+                            <h3>Reliable</h3>
+                            <p>Long-lasting operation.</p>
                         </div>
                     </div>
                 </div>
