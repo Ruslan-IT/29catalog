@@ -1,68 +1,76 @@
-document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
 
-    const form = this;
-    const phoneInput = form.querySelector('[name="phone"]');
-    const messageInput = form.querySelector('[name="message"]');
+    const form = document.getElementById('contact-form');
+    if (!form) return;
 
-    // Обновляем скрытое сообщение с телефоном
-    if (phoneInput && messageInput) {
-        messageInput.value = 'Callback request. Phone: ' + phoneInput.value;
-    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    fetch(form.action, {
-        method: 'POST',
-        headers: {
-            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
-            'Accept': 'application/json'
-        },
-        body: new FormData(form)
-    })
-        .then(response => response.json())
-        .then(data => {
-            // Скрываем модальное окно (если есть)
-            const modal = form.closest('.modal');
-            if(modal) {
-                modal.style.opacity = '0';
-                modal.style.pointerEvents = 'none';
+        const phoneInput = form.querySelector('[name="phone"]');
+        const messageInput = form.querySelector('[name="message"]');
 
-                const backdrop = document.querySelector('.modal-backdrop.show');
-                if(backdrop) backdrop.style.opacity = '0';
+        if (phoneInput && messageInput) {
+            messageInput.value = 'Callback request. Phone: ' + phoneInput.value;
+        }
 
-                setTimeout(() => {
-                    modal.style.display = 'none';
-                    if(backdrop) backdrop.remove();
-                }, 300);
-            }
-
-            // Очистка формы
-            form.reset();
-
-            // Показ popup
-            showPopup('We will contact you soon!');
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                'Accept': 'application/json'
+            },
+            body: new FormData(form)
         })
-        .catch(error => {
-            console.error(error);
-            showPopup('We will contact you soon!');
+            .then(() => {
+
+                forceCloseModal();
+                form.reset();
+                showPopup('We will contact you soon!');
+
+            })
+            .catch(() => {
+
+                forceCloseModal();
+                showPopup('We will contact you soon!');
+
+            });
+    });
+
+    /* ===== ЖЁСТКО ЗАКРЫВАЕМ МОДАЛКУ ===== */
+    function forceCloseModal() {
+
+        // скрываем все модальные окна
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.classList.remove('show');
+            modal.style.display = 'none';
         });
 
-    // Функция popup
-    function showPopup(message) {
+        // удаляем backdrop
+        document.querySelectorAll('.modal-backdrop').forEach(b => b.remove());
+
+        // возвращаем scroll
+        document.body.classList.remove('modal-open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+    }
+
+    /* ===== POPUP ===== */
+    function showPopup(text) {
         const popup = document.getElementById('popup');
-        const popupMessage = document.getElementById('popup-message');
-        popupMessage.textContent = message;
+        const msg = document.getElementById('popup-message');
+        msg.textContent = text;
         popup.style.display = 'flex';
     }
 
-    // Закрытие popup
-    document.getElementById('popup-close').onclick = function() {
+    document.getElementById('popup-close').addEventListener('click', function () {
         document.getElementById('popup').style.display = 'none';
-    }
+    });
 
-    window.onclick = function(event) {
+    window.addEventListener('click', function (e) {
         const popup = document.getElementById('popup');
-        if (event.target == popup) {
+        if (e.target === popup) {
             popup.style.display = 'none';
         }
-    }
+    });
+
 });
