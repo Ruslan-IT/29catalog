@@ -46,7 +46,7 @@
                                             @if($product->old_price)
                                                 <span class="old_price">${{ number_format($product->old_price, 2) }}</span>
                                             @endif
-                                            <span class="current_price">${{ number_format($product->price, 2) }}</span>
+
                                         </div>
                                         <div class="countdown_product_desc">
                                             <p>{{ Str::limit($product->description, 50) }}</p>

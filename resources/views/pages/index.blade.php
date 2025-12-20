@@ -131,7 +131,11 @@
                             <h3>engineering solutions</h3>
                             <h2>for factories</h2>
                             <p>Design, installation and commissioning</p>
-                            <a href="#">Request a quote</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="Быстрый просмотр">Click me</a>
+
+                                Request a quote
+
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +151,11 @@
                             <h3>reliable and efficient</h3>
                             <h2>technologies</h2>
                             <p>Turnkey solutions for industrial plants</p>
-                            <a href="#">Get consultation</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="Быстрый просмотр">Click me</a>
+
+                                Get consultation
+
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1880,7 +1888,7 @@
 @endsection
 
 <script>
-    document.getElementById('mc-form').addEventListener('submit', function (e) {
+    /*document.getElementById('mc-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
         const form = this;
@@ -1902,5 +1910,5 @@
             .catch(() => {
                 alert('Ошибка отправки');
             });
-    });
+    });*/
 </script>

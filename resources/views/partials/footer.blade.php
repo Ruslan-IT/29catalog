@@ -9,13 +9,13 @@
                             <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
                         </div>
                         <div class="footer_desc">
-                            <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+                            <p>We provide professional solutions for industrial water treatment and factory equipment installation.</p>
                         </div>
                         <div class="footer_contact">
                             <ul>
-                                <li><i class="ion-location"></i> Ullenhall, Henley-in-Arden B578 5CC, England</li>
-                                <li><i class="ion-ios-telephone"></i> +123.456.789 - +123.456.678/li>
-                                <li><i class="ion-ios-email"></i> <a href="#">support@plazathemes.com</a></li>
+                                <li><i class="ion-location"></i> {{ $siteSettings -> address}}</li>
+                                <li><i class="ion-ios-telephone"></i>  {{ $siteSettings ->phone}} </li>
+                                <li><i class="ion-ios-email"></i> <a href="#">{{ $siteSettings ->email }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -24,12 +24,8 @@
                     <div class="single_footer">
                         <h3>CUSTOMER SERVICE</h3>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Unsubscribe</a></li>
+                            <li><a href="{{ route('contacts') }}">Contact Us</a></li>
+
                         </ul>
                     </div>
                 </div>
