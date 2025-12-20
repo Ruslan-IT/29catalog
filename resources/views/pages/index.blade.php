@@ -92,6 +92,32 @@
             to {transform: scale(1);}
         }
 
+
+
+        .single_categorie_banner {
+            height: 280px; /* выбери нужную высоту */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categorie_banner_thumb {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .categorie_banner_thumb a {
+            display: block;
+            height: 100%;
+        }
+
+        .categorie_banner_thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
     </style>
 
     <!--slider area start-->
@@ -101,32 +127,34 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="slider_content">
-                            <h1>Dual Front Camera <br><strong>Canvas Gear</strong></h1>
-                            <h3>get up to</h3>
-                            <h2>30% off</h2>
-                            <p>Upgrade every 12 months</p>
-                            <a href="#">shop now</a>
+                            <h1>Industrial Water <br><strong>Treatment Equipment</strong></h1>
+                            <h3>engineering solutions</h3>
+                            <h2>for factories</h2>
+                            <p>Design, installation and commissioning</p>
+                            <a href="#">Request a quote</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="single_slider slider_two">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="slider_content">
-                            <h1><strong>Nx80 Wireless </strong><br> Headphones </h1>
-                            <h3>get up to</h3>
-                            <h2>30% off</h2>
-                            <p>20.3 Megapixels plus 80 Megapixel</p>
-                            <a href="#">shop now</a>
+                            <h1><strong>Water Purification</strong><br> Systems for Industry</h1>
+                            <h3>reliable and efficient</h3>
+                            <h2>technologies</h2>
+                            <p>Turnkey solutions for industrial plants</p>
+                            <a href="#">Get consultation</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--slider area end-->
 
     <!--shipping area start-->
