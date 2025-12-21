@@ -1887,28 +1887,4 @@
 
 @endsection
 
-<script>
-    /*document.getElementById('mc-form').addEventListener('submit', function (e) {
-        e.preventDefault();
 
-        const form = this;
-        const email = document.getElementById('mc-email').value;
-
-        fetch(form.action, {
-            method: 'POST',
-            headers: {
-                'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email })
-        })
-            .then(res => res.json())
-            .then(data => {
-                alert(data.message);
-                form.reset();
-            })
-            .catch(() => {
-                alert('Ошибка отправки');
-            });
-    });*/
-</script>

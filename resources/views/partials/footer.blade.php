@@ -31,136 +31,15 @@
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6">
                     <div class="single_footer">
-                        <h3>Information</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Delivery Information</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Warranty</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-8">
-                    <div class="single_footer">
-                        <h3>instagram</h3>
-                        <div class="instagram_active owl-carousel">
-                            <div class="instagram_items">
-                                <div class="instagram_list">
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram1.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram1.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram2.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram2.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram3.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram3.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram4.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram4.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="instagram_list">
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram5.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram5.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram6.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram6.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram7.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram7.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram8.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram8.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="instagram_items">
-                                <div class="instagram_list">
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram1.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram1.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
 
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram2.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram2.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram3.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram3.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram4.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram4.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="instagram_list">
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram5.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram5.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram6.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram6.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram7.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram7.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="single_instagram">
-                                        <a href="#"><img src="assets/img/instagram/instagram8.jpg" alt=""></a>
-                                        <div class="instagram_icone">
-                                            <a class="instagram_popup" href="assets/img/instagram/instagram8.jpg"><i class="ion-social-instagram"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer_bottom">
+       {{-- <div class="footer_bottom">
             <div class="row">
                 <div class="col-12">
                     <div class="tag_block">
@@ -201,14 +80,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
     </div>
     <div class="copyright_area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <div class="copyright_content">
-                        <p>Copyright &copy; 2025, <a href="#">Cigar</a>. All Rights Reserved</p>
+                        <p>Copyright &copy; 2025, <a href="#"></a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
